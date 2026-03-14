@@ -28,7 +28,7 @@ function changeImg() {
 let defaultInputText = 'Write something here...'
 
 let className = ref('active')
-let isInactive = ref(true)
+let isInactive = ref(false)
 let isCenter = ref(false)
 </script>
 
