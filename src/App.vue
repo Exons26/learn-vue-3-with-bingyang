@@ -1,37 +1,28 @@
 <template>
-  <!--The most basic form of data binding is text interpolation using the "Mustache" syntax (double curly braces)-->
   <h1>message: {{ message }}</h1>
-
   <hr />
-
-  <!--{{message}} refers to the message we defined in data-->
   <h1>number: {{ number }}</h1>
-
+  <hr />
   <h1>doubleNum(50): {{ doubleNum(50) }}</h1>
-
+  <hr />
   <h1>number * 2 = {{ number * 2 }}</h1>
-
+  <hr />
   <h1>
-    {{ number > 150 ? 'number is great than 150' : 'number is less than 150' }}
+    {{ 
+      number > 150 ? 'number is great than 150' : 'number is less than 150' 
+      }}
   </h1>
-
+  <hr />
   <h1 v-text="number"></h1>
-
   <hr />
-
-  <h1>harry: {{ harry }}</h1>
-
-  <h1>harry.name: {{ harry.name }}</h1>
-
-  <h1>hogwartsWizards: {{ hogwartsWizards }}</h1>
-
-  <h1>hogwartsWizards[0]: {{ hogwartsWizards[0] }}</h1>
+  <h1>{{ harry }}</h1>
+  <h1>{{ harry.name }}</h1>
   <hr />
-
-  <h1>rawHtml: {{ rawHtml }}</h1>
-
+  <h1>{{ hogwartsWizards }}</h1>
+  <h1>{{ hogwartsWizards[0] }}</h1>
+  <hr />
+  <h1>{{ rawHtml }}</h1>
   <h1 v-text="rawHtml"></h1>
-
   <h1 v-html="rawHtml"></h1>
 </template>
 
